@@ -1,0 +1,40 @@
+{
+  "name": "nakhl-accounting",
+  "version": "1.1.0",
+  "description": "Nakhl Accounting",
+  "main": "main.js",
+  "author": "Nakhl",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --x64 --publish never"
+  },
+  "build": {
+    "appId": "com.nakhl.accounting",
+    "productName": "NakhlAccounting",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "build/icon.png"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "حسابداری نخل",
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "NakhlAccounting-Setup.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  }
+}

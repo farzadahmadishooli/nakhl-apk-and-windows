@@ -1,0 +1,13 @@
+{
+  "id": "./",
+  "name": "حسابداری پخش پوشاک نخل",
+  "short_name": "حسابداری نخل",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#17130e",
+  "theme_color": "#ffc400",
+  "description": "برنامه آفلاین حسابداری پخش پوشاک نخل"
+}
